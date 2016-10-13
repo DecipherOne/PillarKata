@@ -1,0 +1,8 @@
+D:\git\PillarInterview\PillarKata\PayCalculatorTest\bin\Debug\PayCalculatorTest.dll
+D:\git\PillarInterview\PillarKata\PayCalculatorTest\bin\Debug\PayCalculatorTest.pdb
+D:\git\PillarInterview\PillarKata\PayCalculatorTest\bin\Debug\BabySitterCalc.exe
+D:\git\PillarInterview\PillarKata\PayCalculatorTest\bin\Debug\Microsoft.VisualStudio.QualityTools.UnitTestFramework.dll
+D:\git\PillarInterview\PillarKata\PayCalculatorTest\bin\Debug\BabySitterCalc.pdb
+D:\git\PillarInterview\PillarKata\PayCalculatorTest\obj\Debug\PayCalculatorTest.csprojResolveAssemblyReference.cache
+D:\git\PillarInterview\PillarKata\PayCalculatorTest\obj\Debug\PayCalculatorTest.dll
+D:\git\PillarInterview\PillarKata\PayCalculatorTest\obj\Debug\PayCalculatorTest.pdb

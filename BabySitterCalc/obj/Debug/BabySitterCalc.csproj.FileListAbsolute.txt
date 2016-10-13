@@ -1,0 +1,6 @@
+D:\git\PillarInterview\PillarKata\BabySitterCalc\bin\Debug\BabySitterCalc.exe.config
+D:\git\PillarInterview\PillarKata\BabySitterCalc\bin\Debug\BabySitterCalc.exe
+D:\git\PillarInterview\PillarKata\BabySitterCalc\bin\Debug\BabySitterCalc.pdb
+D:\git\PillarInterview\PillarKata\BabySitterCalc\obj\Debug\BabySitterCalc.csprojResolveAssemblyReference.cache
+D:\git\PillarInterview\PillarKata\BabySitterCalc\obj\Debug\BabySitterCalc.exe
+D:\git\PillarInterview\PillarKata\BabySitterCalc\obj\Debug\BabySitterCalc.pdb

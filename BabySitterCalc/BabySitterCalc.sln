@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BabySitterCalc", "BabySitterCalc.csproj", "{630DAAB1-85D5-4174-9BB5-CE0C8F793BD3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PayCalculatorTest", "..\PayCalculatorTest\PayCalculatorTest.csproj", "{C8945262-9C8F-4EDE-8A8C-774CBEADFED3}"
+	ProjectSection(ProjectDependencies) = postProject
+		{630DAAB1-85D5-4174-9BB5-CE0C8F793BD3} = {630DAAB1-85D5-4174-9BB5-CE0C8F793BD3}
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{630DAAB1-85D5-4174-9BB5-CE0C8F793BD3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{630DAAB1-85D5-4174-9BB5-CE0C8F793BD3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{630DAAB1-85D5-4174-9BB5-CE0C8F793BD3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{630DAAB1-85D5-4174-9BB5-CE0C8F793BD3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C8945262-9C8F-4EDE-8A8C-774CBEADFED3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C8945262-9C8F-4EDE-8A8C-774CBEADFED3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C8945262-9C8F-4EDE-8A8C-774CBEADFED3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C8945262-9C8F-4EDE-8A8C-774CBEADFED3}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
