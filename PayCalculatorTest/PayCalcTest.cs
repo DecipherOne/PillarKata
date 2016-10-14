@@ -70,5 +70,14 @@ namespace PayCalculatorTest
             Assert.AreEqual(48, myCalc.startToBedPay);
 
         }
+
+        [TestMethod]
+        public void VerifyCalculatePayFromBedToMidnight()
+        {
+            myCalc.SetBedTime(10, 55, 1); //This will round up to 11
+            myCalc.CalculatePayFromBedToMidnight();
+            Assert.AreEqual(8, myCalc.bedToMidnightPay);
+
+        }
     }
 }
