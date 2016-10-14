@@ -21,11 +21,9 @@ namespace PayCalculatorTest
         }
 
         [TestMethod]
-        public void VerifyBedTimeIsValid()
+        public void VerifySetBedTimeIsValid()
         {
-            myCalc.bedTime[0] = 7;
-            myCalc.bedTime[1] = 00;
-            myCalc.bedTime[2] = 00;
+            myCalc.SetBedTime(9, 22, 0);
             Assert.IsTrue(myCalc.bedTime[0] > 0 && myCalc.bedTime[0] >= 1 && myCalc.bedTime[0] < 13);
         }
 

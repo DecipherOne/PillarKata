@@ -32,7 +32,24 @@ namespace BabySitterCalc
             startTime[2] = secs;
         }
 
-        public void
+        public void SetBedTime(int hour, int min, int secs)
+        {
+            hour = BoundsCheck(5, 12, hour);
+            min = BoundsCheck(0, 59, min);
+            secs = BoundsCheck(0, 59, secs);
+
+            if (min > 30)
+            {
+                hour += 1;
+                hour = BoundsCheck(5, 12, hour);
+                min = 0;
+                secs = 0;
+            }
+
+            bedTime[0] = hour;
+            bedTime[1] = min;
+            bedTime[2] = secs;
+        }
 
         public int BoundsCheck(int min, int max, int arg)
         {
