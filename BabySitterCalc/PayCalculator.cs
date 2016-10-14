@@ -15,9 +15,12 @@ namespace BabySitterCalc
 
         public int startToBedPay { get; set; }
         static int startToBedPayRate = 12;
-        
-        public int bedToMidnightPay { get; set; }
         static int bedToMidnightPayRate = 8;
+        static int midnightToEndPayRate = 16;
+        public int bedToMidnightPay { get; set; }
+        public int midnightToEndPay { get; set; }
+
+        
 
         public void SetStartTime(int hour, int min, int secs)
         {
@@ -103,6 +106,11 @@ namespace BabySitterCalc
         public void CalculatePayFromBedToMidnight()
         {
             bedToMidnightPay = (12 - bedTime[0]) * bedToMidnightPayRate;
+        }
+
+        public void CalculatePayFromMidNightToEnd()
+        {
+            midnightToEndPay = endTime[0]  * midnightToEndPayRate;
         }
     }
 }
