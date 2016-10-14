@@ -51,5 +51,14 @@ namespace PayCalculatorTest
             myCalc.SetEndTime(2, 52, 0);
             Assert.IsTrue(myCalc.endTime[0] > 0 && myCalc.endTime[0] >= 1 && myCalc.endTime[0] < 13);
         }
+
+        [TestMethod]
+        public void VerifySetEndTimeBoundsRestrictionIsValid()
+        {
+            myCalc.SetEndTime(64, 64, 64);
+            Assert.AreEqual(1, myCalc.endTime[0]);
+            Assert.AreEqual(0, myCalc.endTime[1]);
+            Assert.AreEqual(0, myCalc.endTime[2]);
+        }
     }
 }
