@@ -37,6 +37,15 @@ namespace PayCalculatorTest
         }
 
         [TestMethod]
+        public void VerifySetBedTimeBoundsRestrictionIsValid()
+        {
+            myCalc.SetBedTime(64, 64, 64);
+            Assert.AreEqual(12, myCalc.bedTime[0]);
+            Assert.AreEqual(0, myCalc.bedTime[1]);
+            Assert.AreEqual(0, myCalc.bedTime[2]);
+        }
+
+        [TestMethod]
         public void VerifySetEndTimeIsValid()
         {
             myCalc.SetEndTime(2, 52, 0);
