@@ -67,7 +67,7 @@ namespace BabySitterCalc
                     }
                     catch (InvalidCastException e)
                     {
-                        Console.WriteLine("Ivalid cast exception : %s", e);
+                        Console.WriteLine("Ivalid cast exception : {0}", e);
                     }
 
                     myCalc.SetStartTime(hour, min, 0);
@@ -90,7 +90,7 @@ namespace BabySitterCalc
             while (!done)
             {
                 PrintHeader();
-                Console.Write("\n \n \t Please Enter the time you placed the child to be \n \t Example Format - 5:21 \n \n");
+                Console.Write("\n \n \t Please Enter the time you placed the child to bed \n \t Example Format - 5:21 \n \n");
                 PrintFooter();
                 string buffer = null;
                 buffer = Console.ReadLine();
@@ -113,7 +113,7 @@ namespace BabySitterCalc
                     }
                     catch (InvalidCastException e)
                     {
-                        Console.WriteLine("Ivalid cast exception : %s", e);
+                        Console.WriteLine("Ivalid cast exception : {0}", e);
                     }
 
                     myCalc.SetBedTime(hour, min, 0);
@@ -158,7 +158,7 @@ namespace BabySitterCalc
                     }
                     catch (InvalidCastException e)
                     {
-                        Console.WriteLine("Ivalid cast exception : %s", e);
+                        Console.WriteLine("Ivalid cast exception : {0}", e);
                     }
 
                     myCalc.SetEndTime(hour, min, 0);
