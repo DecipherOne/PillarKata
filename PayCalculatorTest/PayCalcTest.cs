@@ -13,12 +13,11 @@ namespace PayCalculatorTest
         PayCalculator myCalc = new PayCalculator();
 
         [TestMethod]
-        public void VerifyStartTimeIsValid()
+
+        public void VerifySetStartTimeIsValid()
         {
-            myCalc.startTime[0] = 10;
-            myCalc.startTime[1] = 00;
-            myCalc.startTime[2] = 00;
-            Assert.IsTrue( myCalc.startTime[0] > 0 && myCalc.startTime[0] >= 5 && myCalc.startTime[0] < 13);   
+            myCalc.SetStartTime(7, 0, 0);
+            Assert.IsTrue(myCalc.startTime[0] > 0 && myCalc.startTime[0] >= 5 && myCalc.startTime[0] < 13);
         }
 
         [TestMethod]
