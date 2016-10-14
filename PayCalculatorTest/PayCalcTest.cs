@@ -88,5 +88,16 @@ namespace PayCalculatorTest
             Assert.AreEqual(48, myCalc.midnightToEndPay);
 
         }
+
+        [TestMethod]
+        public void VerifyCalculateNightsPay()
+        {
+            myCalc.SetStartTime(5, 31, 1); //round up to 6
+            myCalc.SetBedTime(10, 42, 0); //round up to 11
+            myCalc.SetEndTime(3, 45, 21); //round up to 4
+            myCalc.CalculateNightsPay();
+            Assert.AreEqual(132, myCalc.fullPay);
+
+        }
     }
 }
