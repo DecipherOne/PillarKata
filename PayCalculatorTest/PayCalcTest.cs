@@ -28,11 +28,9 @@ namespace PayCalculatorTest
         }
 
         [TestMethod]
-        public void VerifyEndTimeIsValid()
+        public void VerifySetEndTimeIsValid()
         {
-            myCalc.endTime[0] = 7;
-            myCalc.endTime[1] = 00;
-            myCalc.endTime[2] = 00;
+            myCalc.SetEndTime(2, 52, 0);
             Assert.IsTrue(myCalc.endTime[0] > 0 && myCalc.endTime[0] >= 1 && myCalc.endTime[0] < 13);
         }
     }
