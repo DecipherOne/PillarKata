@@ -20,6 +20,14 @@ namespace PayCalculatorTest
             Assert.IsTrue(myCalc.startTime[0] > 0 && myCalc.startTime[0] >= 5 && myCalc.startTime[0] < 13);
         }
 
+        public void VerifySetStartTimeBoundsRestrictionIsValid()
+        {
+            myCalc.SetStartTime(64, 64, 64);
+            Assert.AreEqual(12, myCalc.startTime[0]);
+            Assert.AreEqual(0, myCalc.startTime[1]);
+            Assert.AreEqual(59, myCalc.startTime[2]);
+        }
+
         [TestMethod]
         public void VerifySetBedTimeIsValid()
         {
