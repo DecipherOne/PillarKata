@@ -13,6 +13,10 @@ namespace BabySitterCalc
         public int[] bedTime = { 0, 0, 0 };
         public int[] endTime = { 0, 0, 0 };
 
+        public int startToBedPay { get; set; }
+        static int startToBedPayRate = 12;
+
+
         public void SetStartTime(int hour, int min, int secs)
         {
             hour = BoundsCheck(5, 12, hour);
@@ -89,6 +93,9 @@ namespace BabySitterCalc
             return arg;
         }
 
-
+        public void CalculatePayFromStartToBed()
+        {
+            startToBedPay = (bedTime[0]-startTime[0]) * startToBedPayRate; 
+        }
     }
 }

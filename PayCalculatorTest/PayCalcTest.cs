@@ -60,5 +60,15 @@ namespace PayCalculatorTest
             Assert.AreEqual(0, myCalc.endTime[1]);
             Assert.AreEqual(0, myCalc.endTime[2]);
         }
+
+        [TestMethod]
+        public void VerifyCalculatePayFromStartToBed()
+        {
+            myCalc.SetStartTime(5, 0, 0);
+            myCalc.SetBedTime(9, 0, 0);
+            myCalc.CalculatePayFromStartToBed();
+            Assert.AreEqual(48, myCalc.startToBedPay);
+
+        }
     }
 }
